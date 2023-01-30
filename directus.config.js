@@ -27,6 +27,9 @@ module.exports = function (env) {
         STORAGE_S3_SECRET: env.STORAGE_S3_SECRET,
         STORAGE_S3_REGION: env.STORAGE_S3_REGION,
         STORAGE_S3_BUCKET:  env.STORAGE_S3_BUCKET,
-        STORAGE_S3_ENDPOINT: env.STORAGE_S3_ENDPOINT
+        STORAGE_S3_ENDPOINT: env.STORAGE_S3_ENDPOINT,
+
+        //Directus variables
+        ASSETS_TRANSFORM_IMAGE_MAX_DIMENSION: 10000,
     };
 };
