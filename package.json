@@ -5,6 +5,9 @@
   "scripts": {
     "start": "npx directus start"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
     "directus": "^10.2.1",
     "pg": "^8.8.0"
