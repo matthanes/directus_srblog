@@ -9,7 +9,7 @@
     "node": "18.x"
   },
   "dependencies": {
-    "directus": "^10.5.3",
+    "directus": "^10.6.3",
     "pg": "^8.8.0"
   }
 }
