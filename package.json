@@ -9,7 +9,8 @@
     "node": "18.x"
   },
   "dependencies": {
-    "directus": "10.7.2",
-    "pg": "^8.8.0"
+    "directus": "10.9.3",
+    "directus-extension-wpslug-interface": "^1.1.0",
+    "pg": "^8.11.0"
   }
 }
