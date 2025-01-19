@@ -6,11 +6,11 @@
     "start": "npx directus start"
   },
   "engines": {
-    "node": "20.x"
+    "node": "22"
   },
   "dependencies": {
-    "directus": "11.1.0",
+    "directus": "11.4.0",
     "directus-extension-wpslug-interface": "^1.1.0",
-    "pg": "^8.13.0"
+    "pg": "^8.13.1"
   }
 }
