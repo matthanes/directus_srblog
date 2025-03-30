@@ -9,8 +9,8 @@
     "node": "22"
   },
   "dependencies": {
-    "directus": "11.4.0",
+    "directus": "11.6.0",
     "directus-extension-wpslug-interface": "^1.1.0",
-    "pg": "^8.13.1"
+    "pg": "^8.14.1"
   }
 }
