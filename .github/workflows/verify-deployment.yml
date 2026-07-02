@@ -1,0 +1,83 @@
+name: Verify Deployment
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: Trigger Railway deployment
+        run: echo "Railway auto-deploys on push to main. Deployment triggered."
+
+  verify:
+    name: Verify Site
+    runs-on: ubuntu-latest
+    needs: deploy
+    permissions: {}
+    steps:
+      - name: Wait 1 minute and verify (attempt 1)
+        run: |
+          echo "Waiting 1 minute before first verification..."
+          sleep 60
+          echo "Checking https://srblog.srblife.com ..."
+          STATUS=$(curl -o /dev/null -s -w "%{http_code}" --max-time 30 https://srblog.srblife.com)
+          echo "HTTP status: $STATUS"
+          if [ "$STATUS" -ge 200 ] && [ "$STATUS" -lt 400 ]; then
+            echo "Site is up! (attempt 1)"
+            exit 0
+          fi
+          echo "Site not ready yet (attempt 1, status $STATUS)"
+          exit 1
+        continue-on-error: true
+        id: check1
+
+      - name: Wait 2 minutes and verify (attempt 2)
+        if: steps.check1.outcome == 'failure'
+        run: |
+          echo "Waiting 2 minutes before second verification..."
+          sleep 120
+          echo "Checking https://srblog.srblife.com ..."
+          STATUS=$(curl -o /dev/null -s -w "%{http_code}" --max-time 30 https://srblog.srblife.com)
+          echo "HTTP status: $STATUS"
+          if [ "$STATUS" -ge 200 ] && [ "$STATUS" -lt 400 ]; then
+            echo "Site is up! (attempt 2)"
+            exit 0
+          fi
+          echo "Site not ready yet (attempt 2, status $STATUS)"
+          exit 1
+        continue-on-error: true
+        id: check2
+
+      - name: Wait 3 minutes and verify (attempt 3)
+        if: steps.check1.outcome == 'failure' && steps.check2.outcome == 'failure'
+        run: |
+          echo "Waiting 3 minutes before third verification..."
+          sleep 180
+          echo "Checking https://srblog.srblife.com ..."
+          STATUS=$(curl -o /dev/null -s -w "%{http_code}" --max-time 30 https://srblog.srblife.com)
+          echo "HTTP status: $STATUS"
+          if [ "$STATUS" -ge 200 ] && [ "$STATUS" -lt 400 ]; then
+            echo "Site is up! (attempt 3)"
+            exit 0
+          fi
+          echo "Site failed all 3 verification attempts."
+          exit 1
+        id: check3
+
+      - name: Report verification success
+        if: steps.check1.outcome == 'success' || steps.check2.outcome == 'success' || steps.check3.outcome == 'success'
+        run: echo "Deployment verified successfully!"
+
+      - name: Report verification failure
+        if: steps.check1.outcome == 'failure' && steps.check2.outcome == 'failure' && steps.check3.outcome == 'failure'
+        run: |
+          echo "Site at https://srblog.srblife.com failed all 3 verification attempts."
+          exit 1
