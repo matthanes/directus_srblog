@@ -9,7 +9,7 @@
     "node": "22"
   },
   "dependencies": {
-    "directus": "12.0.2",
+    "directus": "12.1.1",
     "directus-extension-wpslug-interface": "^1.1.0",
     "pg": "^8.16.3"
   }
