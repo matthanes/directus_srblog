@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       directus:
-        specifier: 12.5.0
-        version: 12.5.0(@aws-sdk/credential-provider-web-identity@3.972.78)(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.11.0(@opentelemetry/api@1.9.1))(@types/node@26.6.5)(encoding@0.1.13)(lodash@4.18.1)
+        specifier: 12.5.1
+        version: 12.5.1(@aws-sdk/credential-provider-web-identity@3.972.78)(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.11.0(@opentelemetry/api@1.9.1))(@types/node@26.6.5)(encoding@0.1.13)(lodash@4.18.1)
       directus-extension-wpslug-interface:
         specifier: ^1.1.0
         version: 1.1.0
@@ -318,12 +318,12 @@ packages:
   '@directus/ai@1.3.2':
     resolution: {integrity: sha512-HUCU24/MGcUP25T1O72IQM21vUqsA4/SjG83CmdpVfz9MJJGfq61qdi0ImLFMNsYSKE10lHhGwlRGsE+NejKUA==}
 
-  '@directus/api@40.0.0':
-    resolution: {integrity: sha512-XUmk1/KPGnBRN5Tn1FeK0qqYHu2QkiVF2W0Vt6pJyHIUPF50nfqXPDaQcNRC7CXduYi+E/BryhBuX86h2Pu/JQ==}
+  '@directus/api@40.0.1':
+    resolution: {integrity: sha512-FzRdhJ6bff7806kTCYcJ3wCVIjLcvuI45yMIJHzH0IRMutDQSIA8WjX8himdREXs+w3sQ59tx/oL+Ev4OX57ew==}
     engines: {node: '>=22'}
 
-  '@directus/app@18.1.0':
-    resolution: {integrity: sha512-/H9rZ5Q8pIoET/3ckIvwwsreMtjVT+iFySqi4rLEcaToXqVECxXYun0Iz0gWLWhl5ziWHTWgiYp/3Xlm8v+tVA==}
+  '@directus/app@18.1.1':
+    resolution: {integrity: sha512-i9CtJG/+sChoZAsX6VVPWE/3iIYYS6/n7QIbS/KfDx7AkjeTp3Se/FRTHJJLCPmYyR7qHBVdtkAzZCAFIAuUSg==}
 
   '@directus/constants@14.5.0':
     resolution: {integrity: sha512-w3frueO0uJR3PGMOCTn42uQWXeDbNZwDtdFJfGyivFB+Vy0subV7hDT+mdu2zmAeYJUYC3vIVD0cxuQfLnmiuA==}
@@ -2883,8 +2883,8 @@ packages:
   directus-extension-wpslug-interface@1.1.0:
     resolution: {integrity: sha512-2dk0I7QQkfVF/jlK1o4pJ8rn3UmYQAvBVSzkaTXXuRYSksJ40zfDQcFsTgoWn4x0cb2ibtPTgIIEk4yvMXpBDA==}
 
-  directus@12.5.0:
-    resolution: {integrity: sha512-4ibBkDhVIRGdPhgEkO94nIyn1vzfXQpF11MGy2cphOsXbb0vf+UPQs+lKQL6z10V8kU18dOw82HsGIxjQhHIBQ==}
+  directus@12.5.1:
+    resolution: {integrity: sha512-3L+ASCHwbCqX7zOg99gj/3hCb3B6lhUVVeUMFuE2MDyKoys8dFQgzHrS1sI5wZFZKOCOm19uqJwrbLCLNKl2mA==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -4555,8 +4555,8 @@ packages:
   sanitize-filename@1.6.3:
     resolution: {integrity: sha512-y/52Mcy7aw3gRm7IrcGDFx/bCk4AhRh2eI9luHOQM86nZsqwiRkkq2GekHXBBD+SmPidc8i2PqtYZl+pWJ8Oeg==}
 
-  sanitize-html@2.17.7:
-    resolution: {integrity: sha512-PGtEkc9cbnedU3s9TmzDbpsZ8w086g/0Q8k8/oIO1NLNU3i5k9yn835CrjJSajp1KMmkisbO1qPXxNKO3welAg==}
+  sanitize-html@2.18.1:
+    resolution: {integrity: sha512-2X5lC8fYla8YaT8g73Nj+HcLWXan5dLyCWLgVvaOmfw7JI78IRsyNtIDytTHdn7hBQbIkCah7Zbmd5jabzeDig==}
     engines: {node: '>=22.12.0'}
 
   secure-json-parse@2.7.0:
@@ -4732,8 +4732,8 @@ packages:
   stream-events@1.0.5:
     resolution: {integrity: sha512-E1GUzBSgvct8Jsb3v2X15pjzN1tYebtbLaMg+eBOUOAxgbLoSbT2NS91ckc5lJD1KfLjId+jXJRgo0qnV5Nerg==}
 
-  stream-json@3.6.0:
-    resolution: {integrity: sha512-NiJdqxKyau579z/E8vfqcjWfSDWxW/AT99javFXdPXF147Z5za85LRXSHEmSX9TKOakB7gaIccfD0fOIctb7KQ==}
+  stream-json@3.7.0:
+    resolution: {integrity: sha512-rCSBdcBP/bPk6T8QFcxAj1MSzAuc5i49cYW6IE7sYObNEPccBJIUiL6fU9c9BWt40aJK0siVynLX7lWaW8alXw==}
 
   stream-shift@1.0.3:
     resolution: {integrity: sha512-76ORR0DO1o1hlKwTbi/DM3EXWGf3ZJYO8cXX5RJwnul2DEg2oyoZyjLNoQM8WsvZiFKCRfC1O0J7iCvie3RZmQ==}
@@ -5255,7 +5255,7 @@ snapshots:
       '@aws-sdk/types': 3.974.6
       '@smithy/core': 3.35.2
       '@smithy/fetch-http-handler': 5.8.0
-      '@smithy/node-http-handler': 4.11.2
+      '@smithy/node-http-handler': 4.12.1
       '@smithy/types': 4.19.0
       tslib: 2.8.1
 
@@ -5673,7 +5673,7 @@ snapshots:
 
   '@directus/ai@1.3.2': {}
 
-  '@directus/api@40.0.0(@aws-sdk/credential-provider-web-identity@3.972.78)(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.11.0(@opentelemetry/api@1.9.1))(@types/node@26.6.5)(encoding@0.1.13)(lodash@4.18.1)':
+  '@directus/api@40.0.1(@aws-sdk/credential-provider-web-identity@3.972.78)(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.11.0(@opentelemetry/api@1.9.1))(@types/node@26.6.5)(encoding@0.1.13)(lodash@4.18.1)':
     dependencies:
       '@ai-sdk/anthropic': 3.0.58(zod@4.1.12)
       '@ai-sdk/devtools': 0.0.15
@@ -5684,7 +5684,7 @@ snapshots:
       '@aws-sdk/client-sesv2': 3.1111.0
       '@braintrust/otel': 0.2.0(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.11.0(@opentelemetry/api@1.9.1))(braintrust@3.37.0(@aws-sdk/credential-provider-web-identity@3.972.78)(zod@4.1.12))
       '@directus/ai': 1.3.2
-      '@directus/app': 18.1.0
+      '@directus/app': 18.1.1
       '@directus/constants': 14.5.0
       '@directus/env': 6.4.0
       '@directus/errors': 3.0.0
@@ -5735,7 +5735,7 @@ snapshots:
       cron: 4.3.4
       date-fns: 4.1.0
       deep-diff: 1.0.2
-      directus: 12.5.0(@aws-sdk/credential-provider-web-identity@3.972.78)(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.11.0(@opentelemetry/api@1.9.1))(@types/node@26.6.5)(encoding@0.1.13)(lodash@4.18.1)
+      directus: 12.5.1(@aws-sdk/credential-provider-web-identity@3.972.78)(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.11.0(@opentelemetry/api@1.9.1))(@types/node@26.6.5)(encoding@0.1.13)(lodash@4.18.1)
       encodeurl: 2.0.0
       eventemitter2: 6.4.9
       execa: 9.6.0
@@ -5792,10 +5792,10 @@ snapshots:
       rollup: 4.59.0
       samlify: 2.13.1
       sanitize-filename: 1.6.3
-      sanitize-html: 2.17.7
+      sanitize-html: 2.18.1
       sharp: 0.35.5(@types/node@26.6.5)
       snappy: 7.3.3(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)
-      stream-json: 3.6.0
+      stream-json: 3.7.0
       tar: 7.5.8
       tsdown: 0.15.11(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)
       tsx: 4.22.4
@@ -5906,7 +5906,7 @@ snapshots:
       - walrus
       - whiskers
 
-  '@directus/app@18.1.0': {}
+  '@directus/app@18.1.1': {}
 
   '@directus/constants@14.5.0': {}
 
@@ -7407,7 +7407,7 @@ snapshots:
 
   accepts@2.0.0:
     dependencies:
-      mime-types: 3.0.1
+      mime-types: 3.0.2
       negotiator: 1.1.0
 
   acorn-import-attributes@1.9.5(acorn@8.19.0):
@@ -8041,9 +8041,9 @@ snapshots:
 
   directus-extension-wpslug-interface@1.1.0: {}
 
-  directus@12.5.0(@aws-sdk/credential-provider-web-identity@3.972.78)(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.11.0(@opentelemetry/api@1.9.1))(@types/node@26.6.5)(encoding@0.1.13)(lodash@4.18.1):
+  directus@12.5.1(@aws-sdk/credential-provider-web-identity@3.972.78)(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.11.0(@opentelemetry/api@1.9.1))(@types/node@26.6.5)(encoding@0.1.13)(lodash@4.18.1):
     dependencies:
-      '@directus/api': 40.0.0(@aws-sdk/credential-provider-web-identity@3.972.78)(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.11.0(@opentelemetry/api@1.9.1))(@types/node@26.6.5)(encoding@0.1.13)(lodash@4.18.1)
+      '@directus/api': 40.0.1(@aws-sdk/credential-provider-web-identity@3.972.78)(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@opentelemetry/api@1.9.1)(@opentelemetry/core@2.11.0(@opentelemetry/api@1.9.1))(@opentelemetry/exporter-trace-otlp-http@0.202.0(@opentelemetry/api@1.9.1))(@opentelemetry/sdk-trace-base@2.11.0(@opentelemetry/api@1.9.1))(@types/node@26.6.5)(encoding@0.1.13)(lodash@4.18.1)
       '@directus/update-check': 14.0.1
     transitivePeerDependencies:
       - '@arethetypeswrong/core'
@@ -8412,7 +8412,7 @@ snapshots:
       fresh: 2.0.0
       http-errors: 2.0.1
       merge-descriptors: 2.0.0
-      mime-types: 3.0.1
+      mime-types: 3.0.2
       on-finished: 2.4.1
       once: 1.4.0
       parseurl: 1.3.3
@@ -10058,9 +10058,8 @@ snapshots:
     dependencies:
       truncate-utf8-bytes: 1.0.2
 
-  sanitize-html@2.17.7:
+  sanitize-html@2.18.1:
     dependencies:
-      deepmerge: 4.3.1
       escape-string-regexp: 4.0.0
       htmlparser2: 12.0.0
       is-plain-object: 5.1.0
@@ -10312,7 +10311,7 @@ snapshots:
     dependencies:
       stubs: 3.0.0
 
-  stream-json@3.6.0:
+  stream-json@3.7.0:
     dependencies:
       stream-chain: 4.2.6
 
@@ -10581,7 +10580,7 @@ snapshots:
     dependencies:
       content-type: 2.1.0
       media-typer: 1.1.1
-      mime-types: 3.0.1
+      mime-types: 3.0.2
 
   typedarray@0.0.7: {}
 
